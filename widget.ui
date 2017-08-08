@@ -6,25 +6,72 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>493</width>
-    <height>105</height>
+    <width>520</width>
+    <height>35</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">gridline-color: rgb(0, 0, 0);
+background-color: rgb(170, 170, 127);
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0">
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <property name="leftMargin">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>4</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetFixedSize</enum>
+     </property>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLineEdit" name="cmdLineEdit"/>
+        <widget class="QLineEdit" name="cmdLineEdit">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(107, 107, 80);</string>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QPushButton" name="submitButton">
+           <property name="styleSheet">
+            <string notr="true">font: oblique 9pt &quot;Sans Serif&quot;;
+font: oblique 9pt &quot;Sans Serif&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
            <property name="text">
             <string>YouGO</string>
            </property>

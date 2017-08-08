@@ -7,9 +7,12 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    this->setAttribute(Qt::WA_TranslucentBackground);
     this->setWindowFlags(Qt::FramelessWindowHint);
-    this->setMaximumSize(500,50);
-    this->setMinimumSize(500,50);
+    this->setMaximumSize(500,40);
+    this->setMinimumSize(500,40);
+    this->setStyleSheet("QWidget{border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px; }");
+
     QObject::connect(ui->cmdLineEdit,SIGNAL(returnPressed()),this,SLOT(on_submitButton_clicked()));
 }
 
@@ -27,3 +30,5 @@ void Widget::on_submitButton_clicked()
   this->close();
 
 }
+
+

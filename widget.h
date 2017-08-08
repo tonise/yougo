@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QProcess>
+#include <QGridLayout>
 namespace Ui {
 class Widget;
 }
